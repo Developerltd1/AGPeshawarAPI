@@ -1,0 +1,66 @@
+﻿@model IEnumerable<ModelLayer.MainModelView.UserInfoModel>
+
+@{
+    ViewBag.Title = "View App User";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <div class="card">
+        <div class="card-header">
+            <div class="card-title">View App User</div>
+        </div>
+        <div class="card-body">
+            <div>@Html.ActionLink("Add New User", "AddMobileUser", null, new { @class = "btn btn-primary" })</div>
+            <br />
+            <div class="card card-default">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <table class="table table-striped my-4 w-100" id="datatable2">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Email Address</th>
+                                            <th>Coins</th>
+                                            <th>Vip Status</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    @{ int autoValue = 0;
+                                        foreach (var item in Model)
+                                        {
+                                            autoValue++;
+                                            <tr>
+                                                <td>
+                                                    @autoValue
+                                                </td>
+                                                <td>
+                                                    @item.email
+                                                </td>
+                                                <td>
+                                                    @item.coins
+                                                </td>
+                                                <td>
+                                                    @item.vipStatus
+                                                </td>
+                                                <td>
+                                                    <a href="@Url.Action("EditMobileUser", "UserManagement", new { MoileUserID =@item.MoileUserID })" class='btn btn-info'>
+                                                        <i class='fa fa-pencil'></i>
+                                                    </a>
+
+                                                    <a href="@Url.Action("DeleteMobileUser", "UserManagement", new { MoileUserID =@item.MoileUserID })" class='btn btn-danger'>
+                                                        <i class='fa fa-trash'></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        }
+                                    }
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>

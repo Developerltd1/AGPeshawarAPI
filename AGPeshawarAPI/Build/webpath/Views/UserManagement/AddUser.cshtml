@@ -1,0 +1,49 @@
+﻿@model ModelLayer.NewUser.AddUser
+
+@{
+    ViewBag.Title = "AddUser";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- START card-->
+<div class="card card-default col-md-6">
+    <div class="card-header">User Registration</div>
+    <div class="card-body offset-1">
+        @using (Html.BeginForm("AddUser", "UserManagement"))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-horizontal">
+                <hr />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                <div class="col-lg-8">
+                    <label class="col-form-label">User Name *</label>
+                    @Html.TextBoxFor(model => model.UserName, new { @class = "form-control", @placeholder = "Enter User Name" })
+                    @Html.ValidationMessageFor(m => m.UserName, "", new { @class = "parsley-required" })
+                </div>
+                <div class="col-lg-8">
+                    <label class="col-form-label">Password *</label>
+                    @Html.PasswordFor(model => model.UserPassword, new { @class = "form-control", @placeholder = "Enter Password" })
+                    @Html.ValidationMessageFor(m => m.UserPassword, "", new { @class = "parsley-required" })
+                </div>
+
+                <div class="col-lg-8">
+                    <label class="col-form-label">Role *</label>
+                    @Html.DropDownListFor(m => m.RoleId, new SelectList(Model.roleLst, "RoleId", "Role"), "Please Select User", new { @class = "select2 form-control ", @placeholder = "Select Category" })
+                    @Html.ValidationMessageFor(m => m.RoleId, "", new { @class = "parsley-required", @id = "spanRoleId" })
+                </div>
+
+
+            </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Create" class="btn btn-primary" />
+                    </div>
+                </div>
+            </div>
+        }
+
+      </div>
+</div>

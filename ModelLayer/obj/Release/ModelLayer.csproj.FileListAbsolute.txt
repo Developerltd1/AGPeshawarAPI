@@ -1,0 +1,6 @@
+D:\Application\Web\ASP.NET\API\AGPeshawarAPI\ModelLayer\bin\Release\ModelLayer.dll
+D:\Application\Web\ASP.NET\API\AGPeshawarAPI\ModelLayer\bin\Release\ModelLayer.pdb
+D:\Application\Web\ASP.NET\API\AGPeshawarAPI\ModelLayer\obj\Release\ModelLayer.csproj.AssemblyReference.cache
+D:\Application\Web\ASP.NET\API\AGPeshawarAPI\ModelLayer\obj\Release\ModelLayer.csproj.CoreCompileInputs.cache
+D:\Application\Web\ASP.NET\API\AGPeshawarAPI\ModelLayer\obj\Release\ModelLayer.dll
+D:\Application\Web\ASP.NET\API\AGPeshawarAPI\ModelLayer\obj\Release\ModelLayer.pdb

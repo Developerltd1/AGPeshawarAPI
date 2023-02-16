@@ -1,0 +1,53 @@
+﻿@model ModelLayer.MainModelView.AddUserVM
+
+@{
+    ViewBag.Title = "EditUser";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- START card-->
+<div class="card card-default col-md-6">
+    <div class="card-header">Edit Admin User</div>
+    <div class="card-body offset-1">
+        @using (Html.BeginForm("EditUser", "UserManagement"))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-horizontal">
+                <hr />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                @Html.HiddenFor(model => model.UserID)
+                <div class="form-group">
+                    <div class="col-lg-8">
+                        <label class="col-form-label">Full Name *</label>
+                        @Html.TextBoxFor(model => model.FullName, new { @class = "form-control", @placeholder = "Enter Full Name" })
+                        @Html.ValidationMessageFor(m => m.FullName, "", new { @class = "parsley-required" })
+                    </div>
+                    <div class="col-lg-8">
+                        <label class="col-form-label">Email Address *</label>
+                        @Html.TextBoxFor(model => model.Email, new { @class = "form-control", @placeholder = "Enter Email Address" })
+                        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "parsley-required" })
+                    </div>
+                    <div class="col-lg-8">
+                        <label class="col-form-label">Mobile No *</label>
+                        @Html.TextBoxFor(model => model.MobileNo, new { @class = "form-control", @placeholder = "Enter Mobile No" })
+                        @Html.ValidationMessageFor(m => m.MobileNo, "", new { @class = "parsley-required" })
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Update" class="btn btn-primary" />
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+</div>
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+

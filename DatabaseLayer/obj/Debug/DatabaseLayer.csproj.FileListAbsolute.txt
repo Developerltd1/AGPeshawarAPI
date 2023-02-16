@@ -1,0 +1,11 @@
+D:\Application\Web\ASP.NET\API\AGPeshawarAPI\DatabaseLayer\obj\Debug\DatabaseLayer.csproj.AssemblyReference.cache
+D:\Application\Web\ASP.NET\API\AGPeshawarAPI\DatabaseLayer\obj\Debug\DatabaseLayer.csproj.CoreCompileInputs.cache
+D:\Application\Web\ASP.NET\API\AGPeshawarAPI\DatabaseLayer\bin\Debug\DatabaseLayer.dll
+D:\Application\Web\ASP.NET\API\AGPeshawarAPI\DatabaseLayer\bin\Debug\DatabaseLayer.pdb
+D:\Application\Web\ASP.NET\API\AGPeshawarAPI\DatabaseLayer\bin\Debug\Dapper.dll
+D:\Application\Web\ASP.NET\API\AGPeshawarAPI\DatabaseLayer\bin\Debug\ModelLayer.dll
+D:\Application\Web\ASP.NET\API\AGPeshawarAPI\DatabaseLayer\bin\Debug\ModelLayer.pdb
+D:\Application\Web\ASP.NET\API\AGPeshawarAPI\DatabaseLayer\bin\Debug\Dapper.xml
+D:\Application\Web\ASP.NET\API\AGPeshawarAPI\DatabaseLayer\obj\Debug\DatabaseLayer.csproj.CopyComplete
+D:\Application\Web\ASP.NET\API\AGPeshawarAPI\DatabaseLayer\obj\Debug\DatabaseLayer.dll
+D:\Application\Web\ASP.NET\API\AGPeshawarAPI\DatabaseLayer\obj\Debug\DatabaseLayer.pdb

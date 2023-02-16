@@ -1,0 +1,5 @@
+D:\Application\Web\ASP.NET\API\AGPeshawarAPI\ModelLayer\bin\Debug\ModelLayer.dll
+D:\Application\Web\ASP.NET\API\AGPeshawarAPI\ModelLayer\bin\Debug\ModelLayer.pdb
+D:\Application\Web\ASP.NET\API\AGPeshawarAPI\ModelLayer\obj\Debug\ModelLayer.csproj.CoreCompileInputs.cache
+D:\Application\Web\ASP.NET\API\AGPeshawarAPI\ModelLayer\obj\Debug\ModelLayer.dll
+D:\Application\Web\ASP.NET\API\AGPeshawarAPI\ModelLayer\obj\Debug\ModelLayer.pdb
