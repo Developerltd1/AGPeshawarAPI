@@ -1,5 +1,5 @@
 ﻿using Dapper;
-
+using ModelLayer;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -64,7 +64,36 @@ namespace DatabaseLayer
         }
 
 
-        public static object ExcuteNonQueryWithStatusModel(string StoreProcedure, DynamicParameters ObjParm)
+        public static StatusModel ExcuteNonQueryWithStatusModel(string StoreProcedure, DynamicParameters ObjParm)
+        {
+            StatusModel status = new StatusModel();
+            IDbConnection Con = null;
+            try
+            {
+                Con = new SqlConnection(DbConnection.ConnectionString);
+                Con.Open();
+
+                ObjParm.Add("@StatusResult", dbType: DbType.Boolean, direction: ParameterDirection.Output);
+                ObjParm.Add("@StatusDetails", dbType: DbType.String, direction: ParameterDirection.Output, size: 4000);
+                Con.Execute(StoreProcedure, ObjParm, commandType: CommandType.StoredProcedure);
+
+                status.status = Convert.ToBoolean(ObjParm.Get<bool>("@StatusResult"));
+                status.statusDetail = Convert.ToString(ObjParm.Get<string>("@StatusDetails"));
+            }
+            catch (Exception ex)
+            {
+                status.status = false;
+                status.statusDetail = ex.Message;
+            }
+            finally
+            {
+                Con.Close();
+            }
+            return status;
+        }
+
+
+        public static object ExcuteNonQueryWithStatusModelObj(string StoreProcedure, DynamicParameters ObjParm)
         {
             dynamic status = new object();
             IDbConnection Con = null;

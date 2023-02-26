@@ -57,7 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ModelLayer\ModelLayer.csproj">
-      <Project>{6ADA2AFA-CF29-46EE-BB88-0888865BBB5B}</Project>
+      <Project>{6ada2afa-cf29-46ee-bb88-0888865bbb5b}</Project>
       <Name>ModelLayer</Name>
     </ProjectReference>
   </ItemGroup>
