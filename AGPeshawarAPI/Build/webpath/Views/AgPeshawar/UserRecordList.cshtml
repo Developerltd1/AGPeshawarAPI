@@ -34,6 +34,7 @@
                                         <th>Current Monthly Income</th>
                                         <th>Source Of Income</th>
                                         <th>Contact</th>
+                                        <th>Address</th>
                                         <th>Action</th>
 
                                     </tr>
@@ -41,7 +42,6 @@
 
                                 @foreach (var item in Model)
                                 {
-                                    @item.UserDetailId
                             <tr>
                                 <td>
                                     @item.Applicant_name
@@ -85,6 +85,9 @@
                                 </td>
                                 <td>
                                     @item.Contact
+                                </td>
+                                <td>
+                                    @item.Address
                                 </td>
                                 <td>
                                     <a href="@Url.Action("UserRecordList", "AgPeshawar", new { Id =@item.UserDetailId })" class='btn btn-info'>

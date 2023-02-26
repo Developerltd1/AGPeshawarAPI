@@ -1,5 +1,3 @@
-D:\Application\Web\ASP.NET\API\AGPeshawarAPI\AGPeshawarAPI\obj\Debug\AGPeshawarAPI.csproj.AssemblyReference.cache
-D:\Application\Web\ASP.NET\API\AGPeshawarAPI\AGPeshawarAPI\obj\Debug\AGPeshawarAPI.csproj.CoreCompileInputs.cache
 D:\Application\Web\ASP.NET\API\AGPeshawarAPI\AGPeshawarAPI\bin\AGPeshawarAPI.dll.config
 D:\Application\Web\ASP.NET\API\AGPeshawarAPI\AGPeshawarAPI\bin\AGPeshawarAPI.dll
 D:\Application\Web\ASP.NET\API\AGPeshawarAPI\AGPeshawarAPI\bin\AGPeshawarAPI.pdb
@@ -122,6 +120,8 @@ D:\Application\Web\ASP.NET\API\AGPeshawarAPI\AGPeshawarAPI\bin\System.Web.WebPag
 D:\Application\Web\ASP.NET\API\AGPeshawarAPI\AGPeshawarAPI\bin\Newtonsoft.Json.xml
 D:\Application\Web\ASP.NET\API\AGPeshawarAPI\AGPeshawarAPI\bin\System.Web.Http.WebHost.xml
 D:\Application\Web\ASP.NET\API\AGPeshawarAPI\AGPeshawarAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Application\Web\ASP.NET\API\AGPeshawarAPI\AGPeshawarAPI\obj\Debug\AGPeshawarAPI.csproj.AssemblyReference.cache
+D:\Application\Web\ASP.NET\API\AGPeshawarAPI\AGPeshawarAPI\obj\Debug\AGPeshawarAPI.csproj.CoreCompileInputs.cache
 D:\Application\Web\ASP.NET\API\AGPeshawarAPI\AGPeshawarAPI\obj\Debug\AGPeshawarAPI.csproj.CopyComplete
 D:\Application\Web\ASP.NET\API\AGPeshawarAPI\AGPeshawarAPI\obj\Debug\AGPeshawarAPI.dll
 D:\Application\Web\ASP.NET\API\AGPeshawarAPI\AGPeshawarAPI\obj\Debug\AGPeshawarAPI.pdb

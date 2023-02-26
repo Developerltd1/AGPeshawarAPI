@@ -12,174 +12,219 @@
     {
 
         <div class="card-body">
+
             <div class="d-flex align-items-center">
                 <h3 class="m-0">@item.Applicant_name</h3>
                 <button class="ml-auto btn btn-info btn-md" type="button" onclick="window.print();">Print</button>
             </div>
 
             <div class="content-wrapper">
-                <div class="card">
-                    <h3 class="text-center pt-2">Personal Info</h3>
-                    <hr />
-                    <div class="p-2 pb-3">
-                        <table class="table-borderless">
+                <div class="row">
 
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <hr />
+                            <h3 class="text-center">Personal Info</h3>
+                            <hr />
+                            <table class="table table-bordered table-striped" id="user" style="clear: both;">
+                                <tbody>
+                                    <tr>
+
+
+                                        <td style="width: 35%;" class="text-left">Applicant Name</td>
+                                        <td style="width: 65%;" class="text-left">
+                                            <a id="username" data-type="text" data-pk="1" data-title="Enter username">
+                                                @Html.DisplayTextFor(model => item.Applicant_name)
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 35%;" class="text-left">Relation Name</td>
+                                        <td style="width: 65%;" class="text-left">
+                                            <a id="username" data-type="text" data-pk="1" data-title="Enter username">
+                                                @Html.DisplayTextFor(model => item.Relation_name)
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 35%;" class="text-left">CNIC</td>
+                                        <td style="width: 65%;" class="text-left">
+                                            <a id="username" data-type="text" data-pk="1" data-title="Enter username">
+                                                @Html.DisplayTextFor(model => item.Cnic)
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 35%;" class="text-left">Age </td>
+                                        <td style="width: 65%;" class="text-left">
+                                            <a id="username" data-type="text" data-pk="1" data-title="Enter username">
+                                                @Html.DisplayTextFor(model => item.Age)
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 35%;" class="text-left">Gender </td>
+                                        <td style="width: 65%;" class="text-left">
+                                            <a id="username" data-type="text" data-pk="1" data-title="Enter username">
+                                                @Html.DisplayTextFor(model => item.Gender)
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 35%;" class="text-left">Religion </td>
+                                        <td style="width: 65%;" class="text-left">
+                                            <a id="username" data-type="text" data-pk="1" data-title="Enter username">
+                                                @Html.DisplayTextFor(model => item.Religion)
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 35%;" class="text-left">Status </td>
+                                        <td style="width: 65%;" class="text-left">
+                                            <a id="username" data-type="text" data-pk="1" data-title="Enter username">
+                                                @Html.DisplayTextFor(model => item.Status)
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 35%;" class="text-left">No Of Family Members</td>
+                                        <td style="width: 65%;" class="text-left">
+                                            <a id="username" data-type="text" data-pk="1" data-title="Enter username">
+                                                @Html.DisplayTextFor(model => item.No_of_family_members)
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 35%;" class="text-left">No Of Men</td>
+                                        <td style="width: 65%;" class="text-left">
+                                            <a id="username" data-type="text" data-pk="1" data-title="Enter username">
+                                                @Html.DisplayTextFor(model => item.No_of_men)
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 35%;" class="text-left">No Of Women</td>
+                                        <td style="width: 65%;" class="text-left">
+                                            <a id="username" data-type="text" data-pk="1" data-title="Enter username">
+                                                @Html.DisplayTextFor(model => item.No_of_women)
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 35%;" class="text-left">No Of Children</td>
+                                        <td style="width: 65%;" class="text-left">
+                                            <a id="username" data-type="text" data-pk="1" data-title="Enter username">
+                                                @Html.DisplayTextFor(model => item.No_of_children)
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 35%;" class="text-left">Current Monthly Income</td>
+                                        <td style="width: 65%;" class="text-left">
+                                            <a id="username" data-type="text" data-pk="1" data-title="Enter username">
+                                                @Html.DisplayTextFor(model => item.Current_monthly_income)
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 35%;" class="text-left">Source Of Income</td>
+                                        <td style="width: 65%;" class="text-left">
+                                            <a id="username" data-type="text" data-pk="1" data-title="Enter username">
+                                                @Html.DisplayTextFor(model => item.Source_of_income)
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 35%;" class="text-left">Contact </td>
+                                        <td style="width: 65%;" class="text-left">
+                                            <a id="username" data-type="text" data-pk="1" data-title="Enter username">
+                                                @Html.DisplayTextFor(model => item.Contact)
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+
+                                        <td style="width: 35%;" class="text-left">Address</td>
+                                        <td style="width: 65%;" class="text-left">
+                                            <a id="username" data-type="text" data-pk="1" data-title="Enter username">
+                                                @Html.DisplayTextFor(model => item.Address)
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <hr />
+                        <h3 class="text-center">Selection Criteria List</h3>
+                        <hr />
+                        <table class="table table-bordered table-striped" id="user" style="clear: both;">
                             <tbody>
-                                <tr>
-                                    <td>1. &ensp; Applicant Name</td>
-                                    <td>
-                                        @Html.DisplayTextFor(model => item.Applicant_name)
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        2. &ensp; Relation Name &ensp; &ensp; &ensp;
-                                    </td>
-                                    <td>
-                                        @Html.DisplayTextFor(model => item.Relation_name)
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>3. &ensp; Cnic</td>
-                                    <td>
-                                        @Html.DisplayTextFor(model => item.Cnic)
-                                    </td>
-                                </tr>
+                                @{
+                                    foreach (var item3 in Model)
+                                    {
+                                        if (item3.Selection_criteria_Join != null)
+                                        {
+                                            var stringarr = item3.Selection_criteria_Join.Split(',');
+                                            foreach (var item2 in stringarr)
+                                            {
+                                                <tr>
 
-                                <tr>
-                                    <td>4. &ensp; Age</td>
-                                    <td>
-                                        @Html.DisplayTextFor(model => item.Age)
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>5. &ensp; Gender</td>
-                                    <td>
-                                        @Html.DisplayTextFor(model => item.Gender)
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>6. &ensp; Religion</td>
-                                    <td>
-                                        @Html.DisplayTextFor(model => item.Religion)
-                                    </td>
-
-                                </tr>
-
-                                <tr>
-                                    <td>7. &ensp; Status</td>
-                                    <td>
-                                        @Html.DisplayTextFor(model => item.Status)
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>8. &ensp; No Of Family Members</td>
-                                    <td>
-                                        @Html.DisplayTextFor(model => item.No_of_family_members)
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>7. &ensp; No Of Men</td>
-                                    <td>
-                                        @Html.DisplayTextFor(model => item.No_of_men)
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>7. &ensp; No Of Women</td>
-                                    <td>
-                                        @Html.DisplayTextFor(model => item.No_of_women)
-                                    </td>
-                                <tr>
-                                    <td>7. &ensp; No Of Children</td>
-                                    <td>
-                                        @Html.DisplayTextFor(model => item.No_of_children)
-                                    </td>
-                                <tr>
-                                    <td>7. &ensp; Current Monthly Income</td>
-                                    <td>
-                                        @Html.DisplayTextFor(model => item.Current_monthly_income)
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>7. &ensp; Source Of Income</td>
-                                    <td>
-                                        @Html.DisplayTextFor(model => item.Source_of_income)
-                                    </td>
-                                <tr>
-                                    <td>7. &ensp; Contact</td>
-                                    <td>
-                                        @Html.DisplayTextFor(model => item.Contact)
-                                    </td>
-                                </tr>
+                                                    <td style="width: 100%; align-self:center ">
+                                                        <a id="username" data-type="text" data-pk="1" data-title="Enter username">@item2</a>
+                                                    </td>
+                                                </tr>
+                                            }
+                                        }
+                                    }
+                                }
 
                             </tbody>
                         </table>
                     </div>
 
 
-                    <hr />
-                    <h3 class="text-center">Selection Criteria List</h3>
-                    <hr />
-                    <table class="table table-bordered table-striped" id="user" style="clear: both;">
-                        <tbody>
-                            @{
-                                foreach (var item3 in Model)
-                                {
-                                    if (item3.Selection_criteria_Join != null)
-                                    {
-                                        var stringarr = item3.Selection_criteria_Join.Split(',');
-                                        foreach (var item2 in stringarr)
-                                        {
-                                            <tr>
-                                                <td style="width: 35%;">Simple text field</td>
-                                                <td style="width: 65%;">
-                                                    <a id="username" data-type="text" data-pk="1" data-title="Enter username">@item2</a>
-                                                </td>
-                                            </tr>
-                                        }
-                                    }
-                                }
-                            }
 
-                        </tbody>
-                    </table>
                 </div>
+            
+                        <div class="card card-default">
+                            <div class="card-body text-center">
+                                <div class="row">
+                                    <div class="col-12 d-inline-flex">
+                                        <div class="col-4 py-4">
+                                            <h3 class="m-0 text-bold">CNIC Front Image</h3>
+                                            <img class="img-fluid  img-thumbnail " src="data:image/png;base64, @item.Cnic_image" alt="CNIC FRONT">
+                                        </div>
+                                        <div class="col-4 py-4">
+                                            <h3 class="m-0 text-bold">CNIC Back Image</h3>
+                                            <img class="img-fluid  img-thumbnail " src="data:image/png;base64, @item.Cnic_image_back" alt="CNIC FRONT">
+                                        </div>
+                                        <div class="col-4 py-4">
+                                            <h3 class="m-0 text-bold">Signature Image</h3>
+                                            <img class="img-fluid  img-thumbnail " src="data:image/png;base64, @item.Signature_pic" alt="CNIC FRONT">
+                                        </div>
+                                        @*<div class="my-3">
+            <p>Hello, I'm a just a dummy contact in your contact list and this is my presentation text. Have fun!</p>
+        </div>*@
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+
+                
             </div>
 
-       
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </div>
+            </div>
     }
 
 </div>
-
-
-
-
-
-
 
 
 

@@ -36,13 +36,13 @@ namespace AGPeshawarAPI.Controllers
 
                
 
-                value.Cnic_image =  StringCompression.Compress(value.Cnic_image);
-                value.Cnic_image_back = StringCompression.Compress(value.Cnic_image_back);
-                value.Signature_pic = StringCompression.Compress(value.Signature_pic);
-                for (int i = 0; i < value.Evidence.Count; i++)
-                {
-                    value.EvidenceCompress.Add(StringCompression.Compress(value.Evidence[i]));
-                }
+                //value.Cnic_image =  StringCompression.Compress(value.Cnic_image);
+                //value.Cnic_image_back = StringCompression.Compress(value.Cnic_image_back);
+                //value.Signature_pic = StringCompression.Compress(value.Signature_pic);
+                //for (int i = 0; i < value.Evidence.Count; i++)
+                //{
+                //    value.EvidenceCompress.Add(StringCompression.Compress(value.Evidence[i]));
+                //}
                    
 
                 
